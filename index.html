@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Form</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <div class="main">
+      <div class="container mt-3">
+        <h2>Form</h2>
+        <form autocomplete="on">
+            <div class="mb-3 mt-3">
+                <label for = "name">Name:</label>
+                <input type = "name" class="form-control" id="name" placeholder="Enter your name" name="name">
+            </div>
+            <div class="mb-3 mt-3">
+                <label for = "email">Email:</label>
+                <input type = "email" class="form-control" id="email" placeholder="Enter email" name="email">
+            </div>
+            <div class="mb-3">
+                <label for = "mobile">Mobile:</label>
+                <input type = "text" class="form-control" id="mobile" placeholder="Enter mobile" name="mobile">
+            </div>
+            <div class="mb-3">
+                <label for = "aadhar">Aadhar:</label>
+                <input type = "text" class="form-control" id="aadhar" placeholder="Enter aadhar" name="aadhar">
+            </div>
+            <div class="mb-3">
+                <label for = "pan">PAN:</label>
+                <input type = "text" class="form-control" id="pan" placeholder="Enter PAN" name="pan">
+            </div>
+            <div class="mb-3">
+                <label for = "dob">DOB:</label>
+                <input type = "text" class="form-control" id="dob" placeholder="DD-MM-YYYY" name="pan">
+            </div>
+            <div class= "marks">
+                <label for = "dob">Marks</label>
+                <input type = "text"  id="marks1" placeholder="1st subject" name="marks">
+                <input type = "text"  id="marks2" placeholder="2nd subject" name="marks">
+                <input type = "text"  id="marks3" placeholder="3rd subject" name="marks">
+                <input type = "text"  id="marks4" placeholder="4th subject" name="marks">
+                <input type = "text"  id="marks5" placeholder="5th subject" name="marks">
+                <input type = "text"  id="marks6" placeholder="6th subject" name="marks">
+            </div>
+            <div class="form-check mb-3">
+                <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input"> Remember me
+                </label>
+            </div>
+            <button type="submit" class="btn btn-primary" onclick="submitForm()">Submit</button>
+        </form>
+      </div>  
+    </div>
+
+    <div class="result">
+        
+        <p id="rname"></p>
+
+    </div>
+</body>
+
+</html>
