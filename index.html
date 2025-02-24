@@ -17,27 +17,34 @@
         <form autocomplete="on">
             <div class="mb-3 mt-3">
                 <label for = "name">Name:</label>
-                <input type = "name" class="form-control" id="name" placeholder="Enter your name" name="name">
+                <input type = "text" class="form-control" id="name" placeholder="Enter your name" name="name">
+                <p id="rname"></p>
             </div>
+            
             <div class="mb-3 mt-3">
                 <label for = "email">Email:</label>
-                <input type = "email" class="form-control" id="email" placeholder="Enter email" name="email">
+                <input type = "text" class="form-control" id="email" placeholder="Enter email" name="email">
+                <p id="em"></p>
             </div>
             <div class="mb-3">
                 <label for = "mobile">Mobile:</label>
                 <input type = "text" class="form-control" id="mobile" placeholder="Enter mobile" name="mobile">
+                <p id="mb"></p>
             </div>
             <div class="mb-3">
                 <label for = "aadhar">Aadhar:</label>
                 <input type = "text" class="form-control" id="aadhar" placeholder="Enter aadhar" name="aadhar">
+                <p id="ad"></p>
             </div>
             <div class="mb-3">
                 <label for = "pan">PAN:</label>
                 <input type = "text" class="form-control" id="pan" placeholder="Enter PAN" name="pan">
+                <p id="pn"></p>
             </div>
             <div class="mb-3">
                 <label for = "dob">DOB:</label>
-                <input type = "text" class="form-control" id="dob" placeholder="DD-MM-YYYY" name="pan">
+                <input type = "text" class="form-control" id="dob" placeholder="DD-MM-YYYY" name="dob">
+                <p id="db"></p>
             </div>
             <div class= "marks">
                 <label for = "dob">Marks</label>
@@ -47,22 +54,18 @@
                 <input type = "text"  id="marks4" placeholder="4th subject" name="marks">
                 <input type = "text"  id="marks5" placeholder="5th subject" name="marks">
                 <input type = "text"  id="marks6" placeholder="6th subject" name="marks">
+                <p id="mrks"></p>
             </div>
             <div class="form-check mb-3">
                 <label class="form-check-label">
                     <input type="checkbox" class="form-check-input"> Remember me
                 </label>
             </div>
-            <button type="submit" class="btn btn-primary" onclick="submitForm()">Submit</button>
+            <button type="submit" class="btn btn-primary" onclick="submitForm(event)">Submit</button>
         </form>
       </div>  
     </div>
 
-    <div class="result">
-        
-        <p id="rname"></p>
-
-    </div>
 </body>
 
 </html>
